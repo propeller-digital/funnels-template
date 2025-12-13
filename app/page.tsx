@@ -4,7 +4,7 @@ import { CartButton } from "@/components/cart-button";
 import { CartDrawer } from "@/components/cart-drawer";
 import { ProductDisplay } from "@/components/product-display";
 import { PRODUCT_DATA } from "@/lib/product-data";
-import { CMS_CONTENT } from "@/lib/cms";
+import cmsData from "@/lib/cms.json";
 
 import { HeroSection } from "@/components/sections/hero-section";
 import { FeaturesSection } from "@/components/sections/features-section";
@@ -13,6 +13,55 @@ import { TestimonialsSection } from "@/components/sections/testimonials-section"
 import { FaqSection } from "@/components/sections/faq-section";
 import { CtaSection } from "@/components/sections/cta-section";
 import { FooterSection } from "@/components/sections/footer-section";
+
+// CMS component content types
+interface HeroContent {
+  headline: string;
+  subheadline: string;
+  ctas: Array<{ label: string; action: string; supportingText?: string }>;
+  images: Array<{ alt: string; url: string }>;
+}
+
+interface ListicleContent {
+  headline: string;
+  items: Array<{ title: string; text: string; image: { alt: string; url: string } }>;
+}
+
+interface ProofContent {
+  headline: string;
+  body: string;
+  items: Array<{ title: string; text: string; image: { alt: string; url: string } }>;
+}
+
+interface FaqContent {
+  headline: string;
+  items: Array<{ title: string; text: string }>;
+}
+
+interface CtaContent {
+  headline: string;
+  subheadline: string;
+  ctas: Array<{ label: string; action: string; supportingText?: string }>;
+}
+
+interface CmsComponent<T> {
+  type: string;
+  name: string;
+  enabled: boolean;
+  content: T;
+}
+
+// Helper to find component by type
+function findComponent<T>(type: string): CmsComponent<T> | undefined {
+  const component = cmsData.components.find((c) => c.type === type);
+  return component as CmsComponent<T> | undefined;
+}
+
+const heroData = findComponent<HeroContent>("hero");
+const listicleData = findComponent<ListicleContent>("listicle");
+const proofData = findComponent<ProofContent>("proof");
+const faqData = findComponent<FaqContent>("faq");
+const ctaData = findComponent<CtaContent>("cta");
 
 export default function Home() {
   return (
@@ -26,10 +75,10 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <HeroSection content={CMS_CONTENT.hero} />
+      {heroData?.enabled && <HeroSection content={heroData.content} />}
 
       {/* Features Section */}
-      <FeaturesSection content={CMS_CONTENT.features} />
+      {listicleData?.enabled && <FeaturesSection content={listicleData.content} />}
 
       {/* Product Display */}
       <section className="py-16 px-4">
@@ -46,19 +95,19 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <BenefitsSection content={CMS_CONTENT.benefits} />
+      <BenefitsSection messaging={cmsData.messaging} />
 
       {/* Testimonials Section */}
-      <TestimonialsSection content={CMS_CONTENT.testimonials} />
+      {proofData?.enabled && <TestimonialsSection content={proofData.content} />}
 
       {/* FAQ Section */}
-      <FaqSection content={CMS_CONTENT.faq} />
+      {faqData?.enabled && <FaqSection content={faqData.content} />}
 
       {/* CTA Section */}
-      <CtaSection content={CMS_CONTENT.cta} />
+      {ctaData?.enabled && <CtaSection content={ctaData.content} />}
 
       {/* Footer Section */}
-      <FooterSection content={CMS_CONTENT.footer} />
+      <FooterSection pageTitle={cmsData.page.title} />
 
       {/* Cart Drawer */}
       <CartDrawer />

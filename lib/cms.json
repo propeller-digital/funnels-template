@@ -1,0 +1,295 @@
+{
+  "page": {
+    "title": "The Complete Snowboard - Premium Performance for Professional Athletes",
+    "language": "en"
+  },
+  "version": "1.0",
+  "listicle": {
+    "itemCount": 5,
+    "orderingLogic": "From most to least compelling reasons",
+    "formatDescription": "5 Reasons to Try The Complete Snowboard"
+  },
+  "messaging": {
+    "audience": "Professional athletes",
+    "mainBenefit": "Cutting-edge performance",
+    "mainPromise": "Experience cutting-edge performance on every slope.",
+    "toneOfVoice": "Professional, inspiring, with a hint of exclusivity",
+    "keyObjections": [
+      "Is it worth the premium price?",
+      "What makes it better than other snowboards?",
+      "How does it perform under different conditions?"
+    ],
+    "pricePosition": "Premium quality"
+  },
+  "components": [
+    {
+      "name": "Hero Section",
+      "type": "hero",
+      "content": {
+        "ctas": [
+          {
+            "label": "Claim Your Snowboard Now",
+            "action": "add_to_cart",
+            "supportingText": "Limited stock available!"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Top and bottom view of a snowboard. The top view shows abstract circles and lines in shades of teal. The bottom view shows abstract circles and lines in shades of purple and blue with the text “SHOPIFY” in a sans serif typeface on top.",
+            "url": "https://cdn.shopify.com/s/files/1/0661/0691/6982/files/Main_589fc064-24a2-4236-9eaf-13b2bd35d21d.jpg?v=1759854447"
+          }
+        ],
+        "headline": "Unleash Your Potential with The Complete Snowboard",
+        "subheadline": "Premium quality for the discerning athlete"
+      },
+      "enabled": true,
+      "styleIntent": {
+        "tone": "bold and impactful",
+        "typography": {
+          "alignment": "center",
+          "bodyStyle": "concise",
+          "headlineStyle": "large and strong"
+        },
+        "colorIntent": {
+          "accentUsage": "highlight CTAs",
+          "backgroundIntent": "dynamic snow and mountain imagery",
+          "paletteDescription": "cool tones with bold accents"
+        }
+      },
+      "instructions": {
+        "purpose": "Capture attention and drive immediate interest.",
+        "constraints": [],
+        "analyticsNotes": [
+          "Track CTA clicks and scroll depth"
+        ],
+        "implementationNotes": [
+          "Use high-quality imagery to convey product excellence"
+        ]
+      },
+      "layoutIntent": {
+        "flow": "headline -> image -> CTA",
+        "pattern": "single column",
+        "hierarchy": "headline should capture attention immediately"
+      }
+    },
+    {
+      "name": "Introduction Section",
+      "type": "intro",
+      "content": {
+        "body": "Professional athletes demand the best, and 'The Complete Snowboard' delivers. Its superior design and quality provide unmatched performance and style on any slope.",
+        "headline": "Elevate Your Ride to the Next Level"
+      },
+      "enabled": true,
+      "styleIntent": {
+        "tone": "engaging and professional",
+        "typography": {
+          "alignment": "left",
+          "bodyStyle": "informative",
+          "headlineStyle": "bold"
+        }
+      },
+      "instructions": {
+        "purpose": "Connect emotionally with the target audience.",
+        "constraints": [],
+        "analyticsNotes": [],
+        "implementationNotes": []
+      },
+      "layoutIntent": {
+        "flow": "problem statement -> solution proposition",
+        "pattern": "two columns (media left)",
+        "hierarchy": "hook sentence should spark curiosity"
+      }
+    },
+    {
+      "name": "Listicle Section",
+      "type": "listicle",
+      "content": {
+        "items": [
+          {
+            "text": "Crafted with the finest materials, this snowboard offers unmatched durability and performance.",
+            "image": {
+              "alt": "Snowboard quality close-up",
+              "url": "https://cdn.shopify.com/s/files/1/0661/0691/6982/files/Main_589fc064-24a2-4236-9eaf-13b2bd35d21d.jpg?v=1759854447"
+            },
+            "title": "Unmatched Quality"
+          },
+          {
+            "text": "Experience innovative design that amplifies your stance and maneuverability.",
+            "image": {
+              "alt": "Innovative design details",
+              "url": "https://cdn.shopify.com/s/files/1/0661/0691/6982/files/Main_589fc064-24a2-4236-9eaf-13b2bd35d21d.jpg?v=1759854447"
+            },
+            "title": "Dynamic Design"
+          },
+          {
+            "text": "Adapt to any snow conditions with superior edge control and response.",
+            "image": {
+              "alt": "Performance in varied conditions",
+              "url": "https://cdn.shopify.com/s/files/1/0661/0691/6982/files/Main_589fc064-24a2-4236-9eaf-13b2bd35d21d.jpg?v=1759854447"
+            },
+            "title": "Season-Ready Performance"
+          },
+          {
+            "text": "Top athletes rely on this board for competitions and leisure alike.",
+            "image": {
+              "alt": "Professional snowboarder testimonial",
+              "url": "https://cdn.shopify.com/s/files/1/0661/0691/6982/files/Main_589fc064-24a2-4236-9eaf-13b2bd35d21d.jpg?v=1759854447"
+            },
+            "title": "Trusted by Professionals"
+          },
+          {
+            "text": "Navigate slopes with precision thanks to advanced tech integration.",
+            "image": {
+              "alt": "Precision control technology",
+              "url": "https://cdn.shopify.com/s/files/1/0661/0691/6982/files/Main_589fc064-24a2-4236-9eaf-13b2bd35d21d.jpg?v=1759854447"
+            },
+            "title": "Ultimate Control"
+          }
+        ],
+        "headline": "5 Reasons to Try The Complete Snowboard"
+      },
+      "enabled": true,
+      "styleIntent": {
+        "tone": "informative and persuasive",
+        "typography": {
+          "alignment": "left",
+          "bodyStyle": "clear",
+          "headlineStyle": "bold"
+        }
+      },
+      "instructions": {
+        "purpose": "Convey the unique selling points that differentiate this product.",
+        "constraints": [],
+        "analyticsNotes": [
+          "Track interaction with each listicle item"
+        ],
+        "implementationNotes": []
+      },
+      "layoutIntent": {
+        "flow": "Reason title -> explanation -> supporting image",
+        "pattern": "single column",
+        "hierarchy": "reason titles should be engaging"
+      }
+    },
+    {
+      "name": "Proof Section",
+      "type": "proof",
+      "content": {
+        "body": "Join the ranks of professional athletes who swear by 'The Complete Snowboard'. See what they have to say:",
+        "items": [
+          {
+            "text": "I've relied on 'The Complete Snowboard' in every competition. Its performance is unparalleled.",
+            "image": {
+              "alt": "John Doe testimonial",
+              "url": "https://cdn.shopify.com/s/files/1/0661/0691/6982/files/Main_589fc064-24a2-4236-9eaf-13b2bd35d21d.jpg?v=1759854447"
+            },
+            "title": "Endorsement from John Doe, Pro Snowboarder"
+          }
+        ],
+        "headline": "Trusted by the Best"
+      },
+      "enabled": true,
+      "styleIntent": {
+        "tone": "reassuring",
+        "typography": {
+          "alignment": "center",
+          "bodyStyle": "genuine",
+          "headlineStyle": "strong"
+        }
+      },
+      "instructions": {
+        "purpose": "Reinforce credibility and build trust.",
+        "constraints": [],
+        "analyticsNotes": [
+          "Monitor which testimonials get the most engagement"
+        ],
+        "implementationNotes": []
+      },
+      "layoutIntent": {
+        "flow": "testimonial -> imagery",
+        "pattern": "single column",
+        "hierarchy": "testimonials should be authentic and relatable"
+      }
+    },
+    {
+      "name": "FAQ Section",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "text": "Its innovative design and premium materials offer unmatched performance.",
+            "title": "What makes The Complete Snowboard superior?"
+          },
+          {
+            "text": "Absolutely. Its durability and advanced features ensure it’s worth every penny.",
+            "title": "Is it worth the higher price point?"
+          },
+          {
+            "text": "Excellent edge control and responsiveness make it versatile in all conditions.",
+            "title": "How does it handle different snow conditions?"
+          }
+        ],
+        "headline": "Frequently Asked Questions"
+      },
+      "enabled": true,
+      "styleIntent": {
+        "tone": "helpful and concise",
+        "typography": {
+          "alignment": "left",
+          "bodyStyle": "succinct",
+          "headlineStyle": "bold"
+        }
+      },
+      "instructions": {
+        "purpose": "Address customer concerns and reinforce the product’s advantages.",
+        "constraints": [],
+        "analyticsNotes": [
+          "Identify which questions are most popular"
+        ],
+        "implementationNotes": []
+      },
+      "layoutIntent": {
+        "flow": "question -> concise answer",
+        "pattern": "two columns",
+        "hierarchy": "questions should address key objections"
+      }
+    },
+    {
+      "name": "Final CTA Section",
+      "type": "cta",
+      "content": {
+        "ctas": [
+          {
+            "label": "Get Yours Now",
+            "action": "add_to_cart",
+            "supportingText": "Secure your place among the elite."
+          }
+        ],
+        "headline": "Don’t Miss Out on Premium Quality",
+        "subheadline": "Experience unrivaled performance – grab yours before they’re gone!"
+      },
+      "enabled": true,
+      "styleIntent": {
+        "tone": "urgent and encouraging",
+        "typography": {
+          "alignment": "center",
+          "bodyStyle": "supportive",
+          "headlineStyle": "urgent"
+        }
+      },
+      "instructions": {
+        "purpose": "Drive conversions with a strong final call to action.",
+        "constraints": [],
+        "analyticsNotes": [
+          "Measure the impact of the final CTA"
+        ],
+        "implementationNotes": []
+      },
+      "layoutIntent": {
+        "flow": "reassurance -> CTA",
+        "pattern": "single column",
+        "hierarchy": "CTA should be prominent"
+      }
+    }
+  ]
+}
