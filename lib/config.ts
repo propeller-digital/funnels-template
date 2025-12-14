@@ -7,6 +7,10 @@ export const STOREFRONT_ACCESS_TOKEN = "4f7413ecd89392682c14e744ed5229f4";
 // Shopify Shop ID (GID format)
 export const SHOP_ID = "gid://shopify/Shop/66106916982";
 
+// CMS Spec API URL - fetches the landing page specification (content, layout, styling) from the Funnels CMS.
+// The spec is served dynamically, allowing content updates without redeploying the landing page.
+export const CMS_SPEC_URL = "";
+
 // Shopify Storefront ID - used for analytics
 // This is the PUBLIC_STOREFRONT_ID from Hydrogen/Headless channel
 // Optional for headless storefronts - specific to Hydrogen deployments (leave it empty)
