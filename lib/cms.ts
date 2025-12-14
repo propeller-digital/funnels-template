@@ -10,7 +10,7 @@ export async function fetchCmsSpec(): Promise<CmsSpecResult> {
     return { success: false, error: "CMS_SPEC_URL is not configured" };
   }
 
-  const response = await fetch(CMS_SPEC_URL);
+  const response = await fetch(CMS_SPEC_URL, { cache: "no-store" });
 
   if (!response.ok) {
     return { success: false, error: `CMS API request failed: ${response.statusText}` };
