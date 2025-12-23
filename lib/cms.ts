@@ -1,11 +1,11 @@
 import { CMS_SPEC_URL } from "./config";
-import { landingPageSpecSchema, LandingPageSpec } from "./cms-schema";
+import { landingPageContentSchema, LandingPageContent } from "./cms-schema";
 
-type CmsSpecResult =
-  | { success: true; data: LandingPageSpec }
+type CmsContentResult =
+  | { success: true; data: LandingPageContent }
   | { success: false; error: string };
 
-export async function fetchCmsSpec(): Promise<CmsSpecResult> {
+export const fetchCmsSpec = async (): Promise<CmsContentResult> => {
   if (!CMS_SPEC_URL) {
     return { success: false, error: "CMS_SPEC_URL is not configured" };
   }
@@ -18,11 +18,11 @@ export async function fetchCmsSpec(): Promise<CmsSpecResult> {
 
   const json = await response.json();
 
-  const result = landingPageSpecSchema.safeParse(json);
+  const result = landingPageContentSchema.safeParse(json);
 
   if (!result.success) {
     return { success: false, error: `Invalid CMS response: ${result.error.message}` };
   }
 
   return { success: true, data: result.data };
-}
+};
